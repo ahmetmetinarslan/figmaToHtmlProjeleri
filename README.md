@@ -7,7 +7,7 @@ Duyarlı Tasarımlar: Tüm projeler, çeşitli cihaz ve ekran boyutlarına uyaca
 Temiz Kodlama: HTML, CSS ve JavaScript kullanarak temiz ve anlaşılır kod yapısı.
 Figma Entegrasyonu: Figma tasarımlarından birebir uyarlamalar.
 
-#Projeler:
-  #1.Proje - FigmaPortfolio
-    - Projenin figma dosyası: https://www.figma.com/design/ybxDR8ola6qg9hzIwmZeTb/Portfolio-Full-Website-design-(Community)?node-id=0%3A1&t=o0udYeHSWlb6d3Xn-1
+# Projeler: <br>
+  # 1.Proje - FigmaPortfolio<br>
+    - Projenin figma dosyası: https://www.figma.com/design/ybxDR8ola6qg9hzIwmZeTb/Portfolio-Full-Website-design-(Community)?node-id=0%3A1&t=o0udYeHSWlb6d3Xn-1<br>
     - Porojenin canlı hali: https://figmatohtmama.netlify.app/
