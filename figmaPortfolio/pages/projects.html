@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/home/home.css" />
+    <link rel="stylesheet" href="../style/projects/projects.css" />
+    <link rel="stylesheet" href="../style/button/button.css" />
+    <title>Projects</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="navbar-container"></div>
+      <header class="home-header">
+        <div class="home-text">
+          <h1>MY PROJECTS</h1>
+          <p>MADE WITH LOVE</p>
+        </div>
+      </header>
+      <div class="projetcs-section-one">
+        <div class="projetcs-section-one-box">
+          <div class="projetcs-section-one-box-projects">
+            <div class="row">
+              <img src="../assets/Card 1.png" alt="card" />
+              <img src="../assets/Card 1.png" alt="card" />
+              <img src="../assets/Card 1.png" alt="card" />
+            </div>
+            <div class="row">
+              <img src="../assets/Card 1.png" alt="card" />
+              <img src="../assets/Card 1.png" alt="card" />
+              <img src="../assets/Card 1.png" alt="card" />
+            </div>
+          </div>
+          <div class="projetcs-section-one-box-buttons">
+            <button><a href="./contact.html">Contact Me</a></button>
+          </div>
+        </div>
+      </div>
+      <div id="footer-container"></div>
+    </div>
+    <script>
+      // Navbar-Componenets
+      fetch("../components/navbar.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("navbar-container").innerHTML = html;
+        });
+      // #Navbar-Componenets
+
+      // Footer-Componenets
+      fetch("../components/footer.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("footer-container").innerHTML = html;
+        });
+      // #Footer-Componenets
+    </script>
+  </body>
+</html>

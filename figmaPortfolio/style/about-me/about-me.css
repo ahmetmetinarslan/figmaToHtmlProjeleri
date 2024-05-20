@@ -1,0 +1,64 @@
+.section-about-me {
+  background-color: white;
+  width: auto;
+  height: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.section-about-me .section-text-container {
+  width: 721px;
+  height: 780px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 80px;
+  padding: 5px;
+}
+
+.section-about-me .section-text-container .text-one h4 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.section-about-me .section-text-container .text-two h4 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.section-about-me .section-text-container .text-two p {
+  line-break: strict;
+}
+
+@media (width: 375px) {
+  .section-about-me {
+    height: auto;
+    padding: 30px;
+  }
+  .section-about-me .section-text-container {
+    width: 375px;
+    height: auto;
+  }
+}
+/*# sourceMappingURL=about-me.css.map */

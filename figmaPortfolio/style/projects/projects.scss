@@ -1,0 +1,49 @@
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.projetcs-section-one {
+  height: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 50px;
+  .projetcs-section-one-box {
+    @include flex-column();
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 95%;
+    .projetcs-section-one-box-projects {
+      width: 100%;
+      height: 100%;
+      height: auto;
+      @include flex-column();
+      gap: 80px;
+      .row {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+  }
+}
+
+@media (width: 375px) {
+  .projetcs-section-one {
+    width: auto;
+    height: auto;
+    .projetcs-section-one-box {
+      .projetcs-section-one-box-projects {
+        gap: 10px;
+        .row {
+          @include flex-column();
+          img {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}

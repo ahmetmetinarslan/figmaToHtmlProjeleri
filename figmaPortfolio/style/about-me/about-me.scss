@@ -1,0 +1,47 @@
+@mixin h4Style {
+  h4 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+}
+
+@mixin flex-column-center-evenly {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.section-about-me {
+  background-color: white;
+  width: auto;
+  height: 1200px;
+  @include flex-column-center-evenly();
+  .section-text-container {
+    width: 721px;
+    height: 780px;
+    @include flex-column-center-evenly();
+    gap: 80px;
+    padding: 5px;
+    .text-one {
+      @include h4Style();
+    }
+    .text-two {
+      @include h4Style();
+      p {
+        line-break: strict;
+      }
+    }
+  }
+}
+
+@media (width: 375px) {
+  .section-about-me {
+    height: auto;
+    padding: 30px;
+    .section-text-container {
+      width: 375px;
+      height: auto;
+    }
+  }
+}

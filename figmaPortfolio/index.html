@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma Portfolio</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style -->
+    <link rel="stylesheet" href="style/home/home.css" />
+    <link rel="stylesheet" href="../style/button/button.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="navbar-container"></div>
+      <header class="home-header">
+        <div class="home-text">
+          <h1>YOUR NAME</h1>
+          <p>WEB DESIGNER</p>
+        </div>
+      </header>
+      <div class="section-one">
+        <div class="section-one-text">
+          <div class="about-me">
+            <h2>About Me</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+              invidunt ut labore et dolore magna aliquyam erat, sed diam
+              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            </p>
+          </div>
+          <div class="my-skills">
+            <h2>My Skills</h2>
+            <img class="desktop-img" src="./assets/Group 46.png" alt="skills" />
+            <!--Bu kabul edilebilir değil farkındayım ama bu kod silinirse dünya yok olur.-->
+          </div>
+        </div>
+      </div>
+      <div class="section-two">
+        <div class="section-two-box">
+          <div class="section-two-box-projects">
+            <img src="./assets/Card 1.png" alt="card" />
+            <img src="./assets/Card 1.png" alt="card" />
+            <img src="./assets/Card 1.png" alt="card" />
+          </div>
+          <div class="section-two-box-buttons">
+            <button>
+              <a href="./pages/projects.html">All Projects</a>
+            </button>
+            <button><a href="./pages/contact.html">Contact Me</a></button>
+          </div>
+        </div>
+      </div>
+      <div id="footer-container"></div>
+    </div>
+    <script>
+      // Navbar-Componenets
+      fetch("../components/navbar.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("navbar-container").innerHTML = html;
+        });
+      // #Navbar-Componenets
+
+      // Footer-Componenets
+      fetch("../components/footer.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("footer-container").innerHTML = html;
+        });
+      // #Footer-Componenets
+    </script>
+  </body>
+</html>
