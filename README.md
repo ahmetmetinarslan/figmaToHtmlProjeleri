@@ -9,5 +9,5 @@ Figma Entegrasyonu: Figma tasarımlarından birebir uyarlamalar.
 
 # Projeler: <br>
   1.Proje - FigmaPortfolio<br>
-  Projenin figma dosyası: https://www.figma.com/design/ybxDR8ola6qg9hzIwmZeTb/Portfolio-Full-Website-design-(Community)?node-id=0%3A1&t=o0udYeHSWlb6d3Xn-1<br>
-  Porojenin canlı hali: https://figmatohtmama.netlify.app/
+  Projenin figma dosyası: <a href:"https://www.figma.com/design/ybxDR8ola6qg9hzIwmZeTb/Portfolio-Full-Website-design-(Community)?node-id=0%3A1&t=o0udYeHSWlb6d3Xn-1"> Tıkla  <a/>  <br>
+  Projenin canlı hali: <a href:"https://figmatohtmama.netlify.app/">Tıkla</a> 
